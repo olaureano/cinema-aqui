@@ -1,0 +1,79 @@
+body {
+  background-color: #f1f1f1;
+  font-family: Roboto, Tahoma;
+  margin: 0;
+}
+header,
+footer {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px #ccc;
+}
+nav {
+  float: right;
+  margin-top: 35px;
+  margin-right: 20px;
+}
+nav a {
+  background-color: black;
+  color: red;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: red;
+  color: white;
+  text-decoration: none;
+}
+.center {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+}
+.column {
+  margin: 10px;
+  box-sizing: border-box;
+}
+.grid img {
+  width: 100%;
+}
+div {
+  box-shadow: 0 0 20px #ccc;
+}
+section {
+  width: 70%;
+  float: left;
+}
+aside {
+  width: 30%;
+  float: right;
+}
+aside img {
+  border: 5px solid #fff;
+  box-shadow: 0 0 20px #ccc;
+}
+
+div p {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 440px) {
+  nav a {
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .grid {
+    grid-template-columns: 100%;
+  }
+  aside img {
+    width: 80%;
+  }
+}
